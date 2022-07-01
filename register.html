@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="register">
+        <div class="row">
+          <div class="col">
+            <h2>Register Form</h2>
+            <p>Create your account, It,s Free and only takes a minute.</p>
+            <p class="message"></p>
+          </div>
+        </div>
+
+        <form action="" id="form">
+          <div class="formRow">
+            <div class="col-6">
+              <label for="email">Email:</label>
+              <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div class="col-6">
+              <label for="username">Username:</label>
+              <input type="text" placeholder="Username" id="username" />
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="col-6">
+              <label for="password">Password:</label>
+              <input type="password" placeholder="Password" id="password" />
+            </div>
+            <div class="col-6">
+              <label for="confirmPassword">Confirm password:</label>
+
+              <input
+                type="password"
+                placeholder="Confirm Passowrd"
+                id="confirmPassword"
+              />
+            </div>
+          </div>
+          <div class="row"><button type="button" id="btn">Sign Up</button></div>
+          <div class="row">
+            <a href="http://localhost:5500/login.html"
+              >already have a account</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

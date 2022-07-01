@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/create.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loading d-none"><p class="loadingMessage">loading...</p></div>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="logo-react"></ion-icon> </span>
+              <span class="title" id="user-name">Brand Name </span>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:5500">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="title">Dashboard </span>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:5500/create.html">
+              <span class="icon"
+                ><ion-icon name="create-outline"></ion-icon
+              ></span>
+              <span class="title">Create Article </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <span class="title">Message </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <ion-icon name="help-circle-outline"></ion-icon
+              ></span>
+              <span class="title">Help </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="settings-outline"></ion-icon>
+              </span>
+              <span class="title">Settings </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="key-outline"></ion-icon>
+              </span>
+              <span class="title">Password </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="signOut">
+              <span class="icon"
+                ><ion-icon name="log-in-outline"></ion-icon>
+              </span>
+              <span class="title">Sign Out </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+          <div class="search">
+            <label for=""
+              ><input type="text" placeholder="search here..." />
+              <ion-icon name="search-outline"></ion-icon
+            ></label>
+          </div>
+          <div class="user">
+            <img src="./img/user5.png" alt="" style="width: 60px" id="avatar" />
+          </div>
+        </div>
+        <div class="details">
+          <div class="form-container">
+            <div class="form">
+              <form action="" id="form">
+                <div class="formRow">
+                  <div class="col-6">
+                    <label for="title">Title:</label>
+                    <input type="text" placeholder="title" id="title" />
+                  </div>
+                  <div class="col-6">
+                    <label for="description">Discription:</label>
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      id="description"
+                    />
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="col-12">
+                    <label for="body">Body:</label>
+                    <input type="text" placeholder="body" id="body" />
+                  </div>
+                </div>
+                <div class="formRow">
+                  <button type="button" id="btn">Create Article</button>
+                </div>
+              </form>
+            </div>
+            <div class="tag-container">
+              <h2>tags</h2>
+              <div class="createTags">
+                <input
+                  type="text"
+                  name=""
+                  id="createTags"
+                  placeholder="new tag ..."
+                />
+                <button type="button" id="createTagBtn">Add</button>
+              </div>
+              <div class="tagList" id="tags"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/create.js"></script>
+  </body>
+</html>
